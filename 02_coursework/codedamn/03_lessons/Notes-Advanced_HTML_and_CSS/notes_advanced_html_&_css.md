@@ -126,3 +126,105 @@ The calc() function takes a single expression as its parameter, with the express
 - Multiplication. At least one of the arguments must be a number.
 
 - Division. The right-hand side must be a number.<br><br>
+
+## Pseudo-classes
+
+A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).<br> For example, `:hover` can be used to change a button's color when the user's pointer hovers over it.
+
+/_ Any button over which the user's pointer is hovering _/
+button:hover {
+color: blue;
+}
+
+Pseudo-classes let you apply a style to an element not only in relation to the content of the document tree, but also in relation to external factors like the history of the navigator (:visited, for example), the status of its content (like :checked on certain form elements), or the position of the mouse (like :hover, which lets you know if the mouse is over an element or not).<br><br>
+
+## Pseudo-elements
+
+A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, ::first-line can be used to change the font of the first line of a paragraph.
+
+/_ The first line of every `p` element. _/<br>
+p::first-line {<br>
+color: blue;<br>
+text-transform: uppercase;<br>
+}
+
+As a rule, double colons `(::)` should be used instead of a single colon `(:)`. This distinguishes pseudo-classes from pseudo-elements.
+
+## attr()
+
+The attr() CSS function is used to retrieve the value of an attribute of the selected element and use it in the stylesheet. It can also be used on pseudo-elements, in which case the value of the attribute on the pseudo-element's originating element is returned.
+
+<strong>syntax</strong>
+
+a:after {<br>
+content: " (" attr(href) ")";<br>
+}
+
+## CSS Media Queries
+
+Media queries are useful when you want to modify your site or app depending on a device's general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width).
+
+Media queries are used for the following:
+
+<li>To conditionally apply styles with the CSS @media and @import at-rules.</li> <br>
+
+<li>To target specific media for the `style`, `link`, `source`, and other HTML elements with the media-attribute.</li><br>
+<li>To test and monitor media states using the Window.matchMedia() and MediaQueryList.addListener() JavaScript methods.</li><br>
+
+<strong>Syntax</strong><br>
+A media query is composed of an optional media type and any number of media feature expressions, which may optionally be combined in various ways using logical operators. Media queries are case-insensitive.
+
+Example<br>
+If the browser window is 600px or smaller, the background color will be lightblue: <br>
+
+@media only screen and (max-width: 600px) {<br>
+body {<br>
+background-color: lightblue;<br>
+}<br>
+}<br><br>
+
+## Using CSS animations<br><br>
+
+CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation's style, as well as possible intermediate waypoints.
+
+Configuring the animation
+To create a CSS animation sequence, you style the element you want to animate with the animation property or its sub-properties. This lets you configure the timing, duration, and other details of how the animation sequence should progress.
+
+The sub-properties of the animation property are:
+
+<strong>animation-name</strong><br>
+Specifies the name of the @keyframes at-rule describing the animation's keyframes.
+
+<strong>animation-duration</strong><br>
+Configures the length of time that an animation should take to complete one cycle.
+
+<strong>animation-timing-function</strong><br>
+Configures the timing of the animation; that is, how the animation transitions through keyframes, by establishing acceleration curves.
+
+<strong>animation-delay</strong><br>
+Configures the delay between the time the element is loaded and the beginning of the animation sequence.
+
+<strong>animation-iteration-count</strong><br>
+Configures the number of times the animation should repeat; you can specify infinite to repeat the animation indefinitely.
+
+The following example binds the "example" animation to the `div` element. The animation will last for 4 seconds, and it will gradually change the background-color of the `div` element from "red" to "yellow":<br><br>
+
+Example<br>
+/_ The animation code _/<br>
+@keyframes example {<br>
+from {<br>
+background-color: red;<br>
+}<br>
+to {
+background-color: yellow;<br>
+}<br>
+}
+
+/_ The element to apply the animation to _/<br>
+div {<br>
+width: 100px;<br>
+height: 100px;<br>
+background-color: red;<br>
+animation-name: example;<br>
+animation-duration: 4s;<br>
+}

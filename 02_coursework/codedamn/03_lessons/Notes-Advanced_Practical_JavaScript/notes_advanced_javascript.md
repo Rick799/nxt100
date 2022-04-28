@@ -36,3 +36,30 @@ Promises can be consumed by registering functions using **_.then_** and **_.catc
 
 - **_then( )_**<br>
   **_then( )_** is invoked when a promise is either resolved or rejected. It may also be defined as a career which takes data from promise and further executes it successfully.
+
+### Parameters:
+
+_then( )_ method takes two functions as parameters.
+
+First function is executed if promise is resolved and a result is received.
+Second function is executed if promise is rejected and an error is received.
+
+- **_catch( )_**
+
+**_catch( )_** is invoked when a promise is either rejected or some error has occurred in execution. It is used as an Error Handler whenever at any step there is a chance of getting an error.
+
+### Parameters:
+
+_catch( )_ method takes one function as parameter.
+
+Function to handle errors or promise rejections.(.catch() method internally calls .then(null, errorHandler), i.e. .catch() is just a shorthand for .then(null, errorHandler) )
+
+# querySelector() Method
+
+The querySelector() method in HTML is used to return the first element that matches a specified CSS selector(s) in the document.
+
+**_Syntax_**:
+
+_element.querySelector(selectors);_
+
+**_Selectors_** are the required field. It Specifies one or more CSS selectors to match the element. These selectors are used to select HTML elements based on their id, classes, types, etc. In the case of multiple selectors, a comma is used to separate each selector. The element which occurs first in the document is the returned element.

@@ -101,3 +101,112 @@ The **&lt;head&gt;** element is a container for all the head elements.
 The **&lt;head&gt;** element must include a title for the document, and can include scripts, styles, meta information, and more.
 
 <br>
+
+# CSS POSITION
+
+The position property specifies the type of positioning method used for an element.
+
+There are _five_ different position values:
+
+<br>
+
+- **_Static_**: Static positioned elements are not affected by the top, bottom, left, and right properties.
+  An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+- **_Relative_**: An element with position: relative; is positioned relative to its normal position.
+  Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.
+
+- **_Fixed_**: An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+- **_Absolute_**: An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+- **_Sticky_**: An element with position: sticky; is positioned based on the user's scroll position.
+  A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+  Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first.
+
+<br>
+
+# FLEXBOX
+
+- **_display_**
+  This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+
+- **_Flex-wrap_**
+
+- **_nowrap_** (default): all flex items will be on one line.
+
+- **_wrap_**: flex items will wrap onto multiple lines, from top to bottom.
+
+- **_wrap-reverse_**: flex items will wrap onto multiple lines from bottom to top.
+  <br>
+
+## JUSTIFTY-CONTENT
+
+<br>
+This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.
+
+<br>
+
+- **_flex-start_** (default): items are packed toward the start of the flex-direction.
+
+- **_flex-end_**: items are packed toward the end of the flex-direction.
+
+- **_start_**: items are packed toward the start of the writing-mode direction.
+
+- **_end_**: items are packed toward the end of the writing-mode direction.
+
+- **_left_**: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.
+
+- **_right_**: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like end.
+
+- **_center_**: items are centered along the line
+
+- **_space-between_**: items are evenly distributed in the line; first item is on the start line, last item on the end line
+
+- **_space-around_**: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+
+- **_space-evenly_**: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+
+<br>
+
+## ALIGN-ITEMS
+
+<br>
+
+This defines the default behavior for how flex items are laid out along the cross axis on the current line.
+
+<br>
+
+- stretch (default): stretch to fill the container (still respect min-width/max-width)
+
+- flex-start / start / self-start: items are placed at the start of the cross axis.
+
+- flex-end / end / self-end: items are placed at the end of the cross axis.
+
+- center: items are centered in the cross-axis
+
+  <br>
+
+## ALIGN-CONTENT
+
+<br>
+
+This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+<br>
+
+- **_normal_** (default): items are packed in their default position as if no value was set.
+
+- **_flex-start / start_**: items packed to the start of the container.
+
+- **_flex-end / end_**: items packed to the end of the container.
+
+- **_center_**: items centered in the container
+
+- **_space-between_**: items evenly distributed; the first line is at the start of the container while the last one is at the end
+
+- **_space-around_**: items evenly distributed with equal space around each line
+
+- **_space-evenly_**: items are evenly distributed with equal space around them
+
+- **_stretch_**: lines stretch to take up the remaining space

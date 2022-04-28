@@ -96,3 +96,19 @@
 **git diff ..** : Shows the differences between two branches.<br>
 **git pull –rebase**: Fetches the remote copy of the current branch and rebases it into the local copy.<br>
 **git push** –all: Pushes all the local branches to the specified remote repository.<br>
+
+- **_Elements_** shows you the HTML used to build the page you’re looking at, together with any inline CSS.
+
+- **_Console_** deals with JavaScript. It gives you information about interactive elements on a page. In Console, you can write JavaScript to interact with the web page you’re viewing, and it also lets you write messages to yourself in the JavaScript of websites you’re building, which then show up in Console to show that the JS was executed.
+
+- The **_Sources_** tab shows you where all the files that were used to make the website are stored and lets you inspect them.
+
+- The **_Network_** tab shows you all the files that are loading in the URL you’re looking at.You get a waterfall and deep data on all the items loaded, including initiator and time to load that element.
+
+- **_Application_** shows you what’s in your browser storage: in-browser databases like Web SQL, local storage, and more. It also gives you granular control over your cookies.
+
+- **_Security_** gives you basic security information, letting you view a site’s HTTPS certificate and TLS status.
+
+- **_Performance_** panel helps in checking your website performance, such as page speed
+
+- **_Audits_**, which autogenerates reports on site functionality and structure to help developers improve performance.

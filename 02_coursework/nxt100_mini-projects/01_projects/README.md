@@ -26,3 +26,12 @@ Nested Flexbox - has been done by following instructions from this [notion file]
 └── README.md
 
 The structure above shows the project structure of cards.
+
+.
+├── flexbox101
+│   ├── 00_basics
+│   ├── 01_nested-flexbox
+│   ├── 02_cards
+│ └── 03_flexbox-grid
+└── README.md
+The structure above shows the project structure of flexbox-grid.

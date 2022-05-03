@@ -58,3 +58,16 @@ The structure above shows the project structure of flexbox-forms.
 └── README.md
 
 The structure above shows the project structure of media-objects.
+
+.
+├── flexbox101
+│   ├── 00_basics
+│   ├── 01_nested-flexbox
+│   ├── 02_cards
+│ ├── 03_flexbox-grid
+│ ├── 04_flexbox-forms
+| ├── 04_media-objects
+| └── 06_website-layout
+└── README.md
+
+The structure above shows the project structure of media-objects.

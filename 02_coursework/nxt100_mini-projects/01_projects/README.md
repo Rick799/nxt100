@@ -32,7 +32,7 @@ The structure above shows the project structure of cards.
 │   ├── 00_basics
 │   ├── 01_nested-flexbox
 │   ├── 02_cards
-│ └── 03_flexbox-grid
+│   └── 03_flexbox-grid
 └── README.md
 The structure above shows the project structure of flexbox-grid.
 
@@ -41,8 +41,8 @@ The structure above shows the project structure of flexbox-grid.
 │   ├── 00_basics
 │   ├── 01_nested-flexbox
 │   ├── 02_cards
-│ ├── 03_flexbox-grid
-│ └── 04_flexbox-forms
+│   ├── 03_flexbox-grid
+│   └── 04_flexbox-forms
 └── README.md
 
 The structure above shows the project structure of flexbox-forms.
@@ -52,9 +52,9 @@ The structure above shows the project structure of flexbox-forms.
 │   ├── 00_basics
 │   ├── 01_nested-flexbox
 │   ├── 02_cards
-│ ├── 03_flexbox-grid
-│ ├── 04_flexbox-forms
-| └── 05_media-objects
+│   ├── 03_flexbox-grid
+│   ├── 04_flexbox-forms
+|   └── 05_media-objects
 └── README.md
 
 The structure above shows the project structure of media-objects.
@@ -64,10 +64,10 @@ The structure above shows the project structure of media-objects.
 │   ├── 00_basics
 │   ├── 01_nested-flexbox
 │   ├── 02_cards
-│ ├── 03_flexbox-grid
-│ ├── 04_flexbox-forms
-| ├── 04_media-objects
-| └── 06_website-layout
+│   ├── 03_flexbox-grid
+│   ├── 04_flexbox-forms
+|   ├── 04_media-objects
+|   └── 06_website-layout
 └── README.md
 
 The structure above shows the project structure of website-layout.
@@ -77,11 +77,11 @@ The structure above shows the project structure of website-layout.
 │   ├── 00_basics
 │   ├── 01_nested-flexbox
 │   ├── 02_cards
-│ ├── 03_flexbox-grid
-│ ├── 04_flexbox-forms
-| ├── 04_media-objects
-| ├── 04_website-layout
-| └── 07_freecodecamp
+│   ├── 03_flexbox-grid
+│   ├── 04_flexbox-forms
+|   ├── 04_media-objects
+|   ├── 04_website-layout
+|   └── 07_freecodecamp
 └── README.md
 
 The structure above shows the project structure of freecodecamp.

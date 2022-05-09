@@ -85,3 +85,10 @@ The structure above shows the project structure of website-layout.
 └── README.md
 
 The structure above shows the project structure of freecodecamp.
+
+.
+├── js101
+│ └── 01_color-flipper
+└── README.md
+
+The structure above shows the project structure of color-flipper.

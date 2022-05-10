@@ -58,4 +58,56 @@ Syntax: <br>
 
 An HTML page can add a module by using a `<script>` tag with the special **_type="module"_** attribute:
 
-`<script type="module" src="index.js"></script>`
+`<script type="module" src="index.js"></script>` <br><br>
+
+# CREATING SERVERS
+
+## Creating Server using **_‘http‘ Module_**:
+
+Import http module: Import http module and store returned HTTP instance into a variable.
+
+**Syntax**:
+
+`var http = require("http");` <br>
+Creating and Binding Server: Create a server instance using createServer() method and bind it to some port using listen() method.
+
+**Syntax**:
+
+`const server = http.createServer().listen(port)` <br>
+**_Parameter)_**: This method **_(listen())_** accepts a single parameter as mentioned above and described below:
+
+- port <Number>: Ports are in the range _1024 to 65535_ containing both registered and Dynamic ports. <br><br>
+
+## Creating Server using **_‘Express’ Module_**:
+
+In order to use the express module, we need to install the **NPM** (_Node Package Manager_) and the following modules (_on cmd_).
+
+// Creates package.json file
+
+> > npm init
+
+// Installs express module
+
+> > npm install express --save OR <br>
+> > npm i express -s <br>
+
+**_Import express module_**: Import express module and store returned instance into a variable.
+
+**Syntax**:
+
+`var express = require("express");` <br><br>
+**_Creating Server_**: The above syntax calls the **“express()”** function and creates a new express application which gets stored inside the app variable.
+
+**Syntax**:
+
+`const app = express();`  
+// OR by Importing and creating express application <br>
+`var express = require("express")();` <br>
+**_Sending and listening to the response_**: It communicates the request and response with the client and the server. It requires **PORT** `<number>` and **IP** `<number>` to communicate.
+
+`app.listen(PORT, IP, Callback);` <br>
+**_Parameter_**: This method accepts three parameters as mentioned above and described below.
+
+- **_PORT_** `<Number>`: Ports are the endpoints of communication which helps to communicate with the client and the server.
+- **_IP_** `<Number>`: IPs represent IPv4 or IPv6 address of a host or a device.
+- **_Callback_** `<Function>`: It accepts a function.

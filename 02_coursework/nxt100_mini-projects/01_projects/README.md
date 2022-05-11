@@ -87,6 +87,13 @@ The structure above shows the project structure of website-layout.
 The structure above shows the project structure of freecodecamp.
 
 .
+├── grid101
+│ └── 00_basics
+└── README.md
+
+The structure above shows the project structure of grid101.
+
+.
 ├── js101
 │ └── 01_color-flipper
 └── README.md

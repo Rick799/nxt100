@@ -99,3 +99,11 @@ The structure above shows the project structure of grid101.
 └── README.md
 
 The structure above shows the project structure of color-flipper.
+
+.
+├── js101
+│ └── 01_color-flipper
+| └── 02_counter
+└── README.md
+
+The structure above shows the project structure of counter.

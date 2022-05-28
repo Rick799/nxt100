@@ -49,6 +49,71 @@ A Function component also returns HTML, and behaves much the same way as a Class
 **_Props_** are passed to components via HTML attributes.
 
 The component receives the argument as a props object: <br>
+<code>
 function Car(props) {
 return <h2>I am a { props.brand }!</h2>;
 }
+</code>
+
+## CONDITIONAL RENDERING
+
+In **_React_**, we can render multiple components on the basis of certain conditions or on the basis of the state of the application. A component in ReactJS thus decides which elements to return depending on one or more conditions. Conditional rendering in React is the same as the conditions in JavaScript.
+
+<li>If</li>
+It is the easiest way of conditional rendering in ReactJS. It returns the element to be rendered if the condition is true.
+
+<li>Logical && operator</li>
+It returns the element right after && if the condition is true. It ignores and skips if the condition is false.
+
+<li>Ternary operator</li>
+It is used to act as a concise if-else statement, for cases where two blocks alternate given a certain condition. Here, the true statement will be rendered, if the condition is true, and if it is false, the false statement will be rendered. <br><br>
+
+# HOOKS
+
+**_Hooks_** allow function components to have access to state and other React features. Hooks allow us to "hook" into React features such as state and lifecycle methods.
+
+Hook Rules
+There are 3 rules for hooks:
+
+<li>Hooks can only be called inside React function components.</li>
+<li>Hooks can only be called at the top level of a component.</li>
+<li>Hooks cannot be conditional</li> <br><br>
+
+# STATE
+
+In a component, state is data we import — typically to show the user — that is subject to change. It could change because the database we’re getting from may be updated, the user modified it etc. <br>
+
+## Changing the state Object
+
+To change a value in the state object, use the **_this.setState()_** method.
+
+When a value in the state object changes, the component will re-render, meaning that the output will change according to the new value(s). <br><br>
+
+# useState Hook
+
+The React useState Hook allows us to track state in a function component.
+
+<code>import { useState } from "react";</code>
+
+useState accepts an initial state and returns two values:
+
+<li>The current state.</li>
+<li>A function that updates the state.</li>
+
+<code>
+    import { useState } from "react";
+    
+    function FavoriteColor() {
+      const [color, setColor] = useState("");
+    }
+</code>
+
+# useEffect Hook
+
+The **_useEffect_** Hook allows you to perform side effects in components.
+
+Some examples of side effects are: **_fetching data, directly updating the DOM, and timers_**.
+
+useEffect accepts two arguments. The second argument is optional.
+
+<code>useEffect(function, dependency)</code>

@@ -1,0 +1,9 @@
+# Day 63 [29/05/22]
+
+- [x] Journal Entry (Part 1)
+- [x] Plan your day.
+  - [x] REACT101 : BASIC COUNTER PROJECT
+- [x] Journal Entry (Part 2)
+- [x] Commit the changes. Each commit should contain the above sections (updated).
+- [x] Celebrate
+<!-- [x] to tick -->

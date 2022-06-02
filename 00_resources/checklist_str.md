@@ -6,6 +6,7 @@
   - [ ] ...
 - [ ] Make Notes
 - [ ] Journal Entry (Part 2)
+- [ ] Tweet
 - [ ] Commit the changes. Each commit should contain the above sections (updated).
 - [ ] Celebrate
 <!-- [x] to tick -->
